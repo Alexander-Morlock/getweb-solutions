@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  @media (min-width: 1024px) and (orientation: portrait) {
+    font-size: 24px;
+  }
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  letter-spacing: 0.05rem;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+
+  &[href] {
+    @include basic-hover-transition;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h2.withSubheader {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+  u {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 0.8;
+    display: inline;
+
+    @include for-tablet-portrait-up {
+      display: block;
+      line-height: 1.2;
+    }
+  }
+
+  span {
+    @include for-mobile-only {
+      font-weight: 700;
+    }
+  }
+
+  @include for-tablet-portrait-up {
+    font-size: 1.5rem;
+    line-height: 1.2;
+
+    u {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  margin-left: 0.9rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -0.9rem;
+    top: -12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--main-accent-color);
+    border: 1px solid var(--main-text-color);
+  }
+
+  &:checked::before {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='78.369px' height='78.369px' viewBox='0 0 78.369 78.369' style='enable-background:new 0 0 78.369 78.369;' xml:space='preserve'%3E%3Cpath fill='%23616684' d='M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704 c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704 C78.477,17.894,78.477,18.586,78.049,19.015z'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+  }
+
+  &+label {
+    cursor: pointer;
+  }
+}

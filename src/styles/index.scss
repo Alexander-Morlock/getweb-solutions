@@ -1,0 +1,33 @@
+@import "./base/variables.scss";
+@import "./base/breakpoints.scss";
+@import "./base/mixins.scss";
+@import "./base/defaults.scss";
+@import "./base/animations.scss";
+@import "./base/buttons.scss";
+@import "./base/customInput.scss";
+@import "./base/fullWidthHeader.scss";
+
+@import "./base/header.scss";
+@import "./base/logo.scss";
+@import "./base/footer.scss";
+@import "./base/topNav.scss";
+
+@import "./homePage/indexPage.scss";
+@import "./homePage/skillsList.scss";
+@import "./homePage/whatWeCanDo.scss";
+@import "./homePage/whoWeAre.scss";
+@import "./homePage/personsList.scss";
+@import "./homePage/mainHighlight.scss";
+@import "./homePage/highlights.scss";
+@import "./homePage/fundamentals.scss";
+@import "./homePage/career.scss";
+@import "./homePage/contactForm.scss";
+@import "./homePage/clients.scss";
+
+@import "./careerPage/careerPage";
+
+@import "./servicePage/servicePage";
+
+@import "./base/wrapper.scss";
+
+@import "./modal/modal.scss";

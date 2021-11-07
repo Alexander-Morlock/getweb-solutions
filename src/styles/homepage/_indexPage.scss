@@ -1,0 +1,13 @@
+.indexPage .wrapper {
+  background-image: url(../assets/images/homepage/header_bg.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+
+  @include for-tablet-landscape-up {
+    padding-top: 4rem;
+  }
+}
+
+.lightTheme .indexPage .wrapper {
+  background-image: url(../assets/images/homepage/header_bg_light.svg);
+}

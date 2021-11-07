@@ -1,0 +1,48 @@
+$time: 0.2s;
+$radius: 0.7rem;
+
+html {
+  --main-bg-color: #252525;
+  --main-text-color: #FFF;
+  --main-accent-color: #FFC600;
+
+  --primary-button-color: #000;
+  --primary-button-hover-color: #000;
+  --primary-button-bg: #FFC600;
+  --primary-button-hover-bg: #FFF;
+
+  --skill-list-item-bg: #1C1C1C;
+
+  --fundamentals-list-item-bg: #121212;
+  --fundamentals-list-item-hover-bg: #2F2F2F;
+  --icon-shadow-bg: #121212;
+  --icon-shadow-hover-bg: #212121;
+
+  --mobile-menu-dropdown-bg: #2F2F2F;
+  --mobile-header-bg: #000;
+
+  --decorative-line-color: #FFC600;
+}
+
+html.lightTheme {
+  --main-bg-color: #f9f9f9;
+  --main-text-color: #616684;
+  --main-accent-color: #FFC600;
+
+  --primary-button-color: 2c2c2c;
+  --primary-button-hover-color: #FFF;
+  --primary-button-bg: #FFC600;
+  --primary-button-hover-bg: #2c2c2c;
+
+  --skill-list-item-bg: #fff;
+
+  --fundamentals-list-item-bg: #ffffff;
+  --fundamentals-list-item-hover-bg: #f1f1f1;
+  --icon-shadow-bg: #eaeaea;
+  --icon-shadow-hover-bg: #d2d2d2;
+
+  --mobile-menu-dropdown-bg: #fff6d7;
+  --mobile-header-bg: #fff;
+
+  --decorative-line-color: #FFC600;
+}

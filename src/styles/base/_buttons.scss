@@ -1,0 +1,37 @@
+.primaryButton {
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.9rem 1.9rem;
+  border-radius: $radius;
+  color: var(--primary-button-color);
+  background-color: var(--primary-button-bg);
+  transform: scale(1);
+  transition: transform $time, color $time, background-color $time;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: var(--primary-button-hover-color);
+    background-color: var(--primary-button-hover-bg);
+    transition: transform $time, color $time, background-color $time;
+  }
+
+  width: 100%;
+  @include for-tablet-portrait-up {
+    width: auto;
+  }
+}
+
+.backButton {
+  padding: 2rem;
+  background-color: var(--primary-button-bg);
+  border-radius: 0.7rem;
+  line-height: 0;
+  background-repeat: no-repeat;
+  background-position: center left 1.3rem;
+  background-image: url("data:image/svg+xml, %3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='20px' viewBox='0 0 451.847 451.847' style='enable-background:new 0 0 451.847 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0 c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744 c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z' /%3E%3C/g%3E%3C/svg%3E");
+}

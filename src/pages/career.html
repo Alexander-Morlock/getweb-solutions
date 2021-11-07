@@ -1,0 +1,97 @@
+<!-- header begin -->
+<%= htmlWebpackPlugin.options.header %>
+<!-- header end -->
+<div class="fullWidthHeader fullWidthHeader--career" id="intro">
+  <div class="fullWidthHeader__header">
+    <a href="<%= htmlWebpackPlugin.options.backButtonUrl %>" class="backButton"></a>
+    <h1 data-vocabulary="54">
+      <%= htmlWebpackPlugin.options.vocabulary['54'] %>
+    </h1>
+  </div>
+</div>
+<div class="wrapper">
+  <section class="careerPage__vacancies">
+    <h2>
+      <%= htmlWebpackPlugin.options.vocabulary['55'] %>
+    </h2>
+    <ul class="careerPage__vacanciesList">
+      <li>
+        <a href="/career__back-end-developer<%= htmlWebpackPlugin.options.languagePostfix %>.html" class="primaryButton"
+          data-vocabulary="41">
+          <%= htmlWebpackPlugin.options.vocabulary['41'] %>
+        </a>
+      </li>
+      <!-- <li>
+        <a href="/career__front-end-developer<%= htmlWebpackPlugin.options.languagePostfix %>.html"
+          class="primaryButton" data-vocabulary="42">
+          <%= htmlWebpackPlugin.options.vocabulary['42'] %>
+        </a>
+      </li>
+      <li>
+        <a href="/career__ux-designer<%= htmlWebpackPlugin.options.languagePostfix %>.html" class="primaryButton"
+          data-vocabulary="43">
+          <%= htmlWebpackPlugin.options.vocabulary['43'] %>
+        </a>
+      </li> -->
+    </ul>
+  </section>
+  <section class="careerPage__tender">
+    <div class="careerPage__tenderHeader">
+      <h2>
+        <%= htmlWebpackPlugin.options.vocabulary['56'] %>
+      </h2>
+      <p>
+        <%= htmlWebpackPlugin.options.vocabulary['57'] %>
+      </p>
+    </div>
+    <ul class="careerPage__tenderStepsList">
+      <li class="careerPage__tenderStep careerPage__tenderStep--cv">
+        <div class="careerPage__tenderStepLine"><span></span></div>
+        <h4>
+          <%= htmlWebpackPlugin.options.vocabulary['58'] %>
+        </h4>
+        <p>
+          <%= htmlWebpackPlugin.options.vocabulary['59'] %>
+        </p>
+      </li>
+      <li class="careerPage__tenderStep careerPage__tenderStep--meeting">
+        <div class="careerPage__tenderStepLine"><span></span></div>
+        <div class="careerPage__tenderStepLine"><span></span></div>
+        <h4>
+          <%= htmlWebpackPlugin.options.vocabulary['60'] %>
+        </h4>
+        <p>
+          <%= htmlWebpackPlugin.options.vocabulary['61'] %>
+        </p>
+      </li>
+      <li class="careerPage__tenderStep careerPage__tenderStep--approve">
+        <div class="careerPage__tenderStepLine"><span></span></div>
+        <div class="careerPage__tenderStepLine"><span></span></div>
+        <h4>
+          <%= htmlWebpackPlugin.options.vocabulary['62'] %>
+          <s>
+            <%= htmlWebpackPlugin.options.vocabulary['63'] %>
+          </s>
+        </h4>
+        <p>
+          <%= htmlWebpackPlugin.options.vocabulary['64'] %>
+        </p>
+      </li>
+      <li class="careerPage__tenderStep careerPage__tenderStep--job">
+        <div class="careerPage__tenderStepLine"><span></span></div>
+        <h4>
+          <%= htmlWebpackPlugin.options.vocabulary['65'] %>
+        </h4>
+        <p>
+          <%= htmlWebpackPlugin.options.vocabulary['66'] %>
+        </p>
+      </li>
+    </ul>
+    <a href="/#contactForm" class="primaryButton career__contactUsButton" data-vocabulary="44">
+      <%= htmlWebpackPlugin.options.vocabulary['44'] %>
+    </a>
+  </section>
+  <!-- footer begin -->
+  <%= htmlWebpackPlugin.options.footer %>
+  <!-- footer end -->
+</div>

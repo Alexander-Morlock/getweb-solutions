@@ -1,0 +1,25 @@
+.whoWeAre {
+  padding-top: 5rem;
+}
+
+.whoWeAre__header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  // margin-bottom: 3rem; když máme fotky týmu
+
+  @include for-tablet-landscape-up {
+    padding-top: 8rem;
+    flex-wrap: nowrap;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.9;
+
+    @include for-tablet-landscape-up {
+      width: 40%;
+      margin-left: 8rem;
+    }
+  }
+}

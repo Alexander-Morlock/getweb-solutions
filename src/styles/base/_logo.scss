@@ -1,0 +1,18 @@
+.logo {
+  min-width: 170px;
+  height: fit-content;
+  position: fixed;
+  z-index: 11;
+  
+  svg, path {
+    fill: var(--main-text-color);
+  }
+
+  @include for-tablet-landscape-up {
+    position: static;
+  }
+
+  .solutions {
+    fill: var(--main-accent-color);
+  }
+}

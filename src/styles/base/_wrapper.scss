@@ -1,0 +1,70 @@
+.wrapper {
+  padding: 1.2rem 2rem 2rem 2rem;
+
+  @include for-tablet-portrait-up {
+    padding: 1.2rem 3rem 3rem 3rem;
+  }
+
+  @include for-tablet-landscape-up {
+    padding: 1rem;
+  }
+
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper__mainHighlight {
+  margin-top: 6rem;
+
+  @include for-tablet-portrait-up {
+    margin-top: 10rem;
+  }
+
+  @include for-tablet-landscape-up {
+    margin-top: 11.5rem;
+  }
+
+  @include for-ipad-pro-landscape {
+    margin-top: 17rem;
+  }
+
+  @include for-iphone5 {
+    margin-top: 4.5rem;
+  }
+
+  @include for-iphoneX {
+    margin-top: 12rem;
+  }
+
+  @include for-vertical-desktop {
+    margin-top: 14rem;
+  }
+}
+
+.wrapper__highlights {
+  margin: 6rem auto 0 auto;
+
+  @include for-tablet-portrait-up {
+    margin-top: 10rem;
+  }
+
+  @include for-tablet-landscape-up {
+    margin-top: 20rem;
+  }
+}
+
+.wrapper__clients {
+  margin-top: 6rem;
+
+  @include for-tablet-portrait-up {
+    margin-top: 8rem;
+  }
+}
+
+.wrapper__footer {
+  margin-top: 9rem;
+}
+
+.wrapper--servicePage {
+  padding-top: 8rem;
+}

@@ -1,0 +1,66 @@
+.career {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 6rem;
+  flex-wrap: wrap;
+
+  @include for-tablet-landscape-up {
+    flex-wrap: nowrap;
+  }
+
+  .career__sectionPart {
+    width: 100%;
+
+    @include for-tablet-landscape-up {
+      width: 45%;
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin: 3rem 0 1.5rem;
+
+    @include for-tablet-landscape-up {
+      font-size: 1.8rem;
+      margin: 1rem 0 1.5rem;
+    }
+  }
+
+  p {
+    line-height: 1.9;
+    font-size: 0.9rem;
+  }
+
+  .subheader {
+    font-size: 1rem;
+    margin: 0.9rem 0 0 0;
+  }
+
+  ul {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    a {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+
+  @include for-tablet-portrait-up {
+    h2 {
+      font-size: 2.8rem;
+    }
+
+    .subheader {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+  }
+}

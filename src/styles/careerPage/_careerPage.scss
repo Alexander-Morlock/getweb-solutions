@@ -1,0 +1,290 @@
+.careerPage__vacanciesList {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.careerPage__tender {
+  display: flex;
+  flex-direction: column;
+}
+
+.careerPage__tenderHeader {
+  padding: 5rem 0 1rem;
+
+  @include for-tablet-portrait-up {
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      margin-right: 4rem;
+      transition: margin 0.2s;
+    }
+  }
+
+  h2 {
+    transition: margin 0.2s;
+    min-width: 15rem;
+
+    @include for-tablet-landscape-up {
+      margin-right: 10rem;
+      transition: margin 0.2s;
+    }
+
+    @include for-laptop-up {
+      margin-right: 15rem;
+      transition: margin 0.2s;
+    }
+
+    @include for-desktop-up {
+      margin-right: 18rem;
+      transition: margin 0.2s;
+    }
+  }
+
+  p {
+    max-width: 43rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+}
+
+.careerPage__tenderStepsList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+  @include for-tablet-portrait-up {
+    margin-bottom: 8rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    margin: 0;
+
+    @include for-tablet-portrait-up {
+      font-size: 1.3rem;
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+}
+
+.careerPage__tenderStep {
+  width: 100%;
+  margin-top: -3px;
+  margin-left: 1rem;
+  position: relative;
+  padding: 2rem 2rem 2rem 3rem;
+  transition: padding 0.2s, margin 0.2s, width 0.2s;
+
+  @include for-tablet-portrait-up {
+    width: 50%;
+    margin-left: 2rem;
+    padding-left: 4rem;
+    transition: padding 0.2s, margin 0.2s, width 0.2s;
+  }
+
+  @include for-laptop-up {
+    margin-left: 6rem;
+    transition: padding 0.2s, margin 0.2s, width 0.2s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.7rem;
+    height: 3.7rem;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    @include for-tablet-portrait-up {
+      width: 4.5rem;
+      height: 4.5rem;
+      left: -2.2rem;
+    }
+  }
+
+  &:nth-child(2n) {
+    margin-left: calc(1rem + 3px);
+    
+    @include for-tablet-portrait-up {
+      align-self: flex-end;
+    }
+
+    .careerPage__tenderStepLine {
+      left: -50%;
+      bottom: auto;
+      top: 0;
+
+      span {
+        top: 0;
+        bottom: auto;
+        right: 0;
+        left: auto;
+        border-right: 3px solid var(--decorative-line-color);
+
+        @include for-tablet-portrait-up {
+          border: 3px solid var(--decorative-line-color);
+        }
+      }
+
+      &+.careerPage__tenderStepLine {
+        top: auto;
+        bottom: 0;
+
+        span {
+          top: auto;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  h4 s {
+    font-weight: 300;
+  }
+}
+
+.careerPage__tenderStepLine {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: 25%;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  @include for-tablet-portrait-up {
+    height: 20%;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    bottom: 0;
+    left: 0;
+    border-left: 3px solid var(--decorative-line-color);
+
+    @include for-tablet-portrait-up {
+      border-radius: 1rem;
+      border: 3px solid var(--decorative-line-color);
+    }
+  }
+
+  &+.careerPage__tenderStepLine {
+    bottom: auto;
+    top: 0;
+
+    span {
+      bottom: auto;
+      top: 0;
+    }
+  }
+}
+
+.careerPage__tenderStep--cv {
+  &::before {
+    background-image: url(../assets/images/career/cv.svg);
+  }
+}
+
+.careerPage__tenderStep--meeting {
+  &::before {
+    background-image: url(../assets/images/career/meeting.svg);
+  }
+}
+
+.careerPage__tenderStep--approve {
+  &::before {
+    background-image: url(../assets/images/career/pick.svg);
+  }
+}
+
+.careerPage__tenderStep--job {
+  &::before {
+    background-image: url(../assets/images/career/job.svg);
+  }
+}
+
+.careerPage__vacancyHighlights {
+  padding-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  line-height: 1.4;
+
+  li {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      left: -2rem;
+      top: 0.25rem;
+      background-color: var(--primary-button-bg);
+    }
+  }
+
+  li:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
+.careerPage__whatWeOffer {
+  line-height: 1.4;
+  margin-bottom: 5rem;
+
+  @include for-tablet-landscape-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h2 {
+      width: 100%;
+    }
+
+    div {
+      width: 48%;
+      position: relative;
+
+      &:last-of-type {
+        &::before {
+          content: '';
+          position: absolute;
+          width: 3px;
+          height: 100%;
+          left: -5%;
+          background-color: var(--decorative-line-color);
+        }
+      }
+    }
+  }
+}
+
+.career__contactUsButton {
+  align-self: center;
+}
+
+// Vacancy page styles
+
+body[class*="career__"] {
+  .career__contactUsButton {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

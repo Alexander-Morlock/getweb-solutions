@@ -1,0 +1,41 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.modal__content {
+  margin: auto;
+
+  h1 {
+    margin-bottom: 0;
+
+    @include for-mobile-only {
+      font-size: 2rem;
+    }
+  }
+
+  .primaryButton {
+    margin-top: 1rem;
+  }
+}
+
+.modal__crossButton {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-image: url(../assets/images/modals/close.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal__iconShadow {
+  fill: var(--icon-shadow-bg);
+}

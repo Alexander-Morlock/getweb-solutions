@@ -1,0 +1,16 @@
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin basic-hover-transition() {
+    transform: scale(1);
+    transition: transform $time;
+  
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: transform $time;
+    }
+}

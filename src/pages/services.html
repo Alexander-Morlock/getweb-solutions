@@ -1,0 +1,32 @@
+<!-- header begin -->
+<%= htmlWebpackPlugin.options.header %>
+<!-- header end -->
+<div class="fullWidthHeader fullWidthHeader--career" id="intro">
+  <div class="fullWidthHeader__header">
+    <a href="<%= htmlWebpackPlugin.options.backButtonUrl %>" class="backButton"></a>
+    <h1 data-vocabulary="54">
+        <%= htmlWebpackPlugin.options.vocabulary['3'] %>
+    </h1>
+  </div>
+</div>
+<div class="wrapper">
+  <h2>
+    <%= htmlWebpackPlugin.options.vocabulary['3'] %>
+  </h2>
+  <ul class="servicesPage__servicesList">
+    <li>
+      <a href="/services__mobile-apps<%= htmlWebpackPlugin.options.languagePostfix %>.html" class="primaryButton">
+        <%= htmlWebpackPlugin.options.vocabulary['83'] %>
+      </a>
+    </li>
+    <li>
+      <a href="/services__information-systems<%= htmlWebpackPlugin.options.languagePostfix %>.html" class="primaryButton">
+        <%= htmlWebpackPlugin.options.vocabulary['89'] %>
+      </a>
+    </li>
+  </ul>
+
+  <!-- footer begin -->
+  <%= htmlWebpackPlugin.options.footer %>
+  <!-- footer end -->
+</div>

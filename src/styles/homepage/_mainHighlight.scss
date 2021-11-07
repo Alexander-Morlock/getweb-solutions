@@ -1,0 +1,155 @@
+.mainHighlight {
+  display: flex;
+  align-items: flex-start;
+  max-width: 55.7rem;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  @include for-tablet-landscape-up {
+    flex-wrap: nowrap;
+  }
+}
+
+.mainHighlight__info {
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .primaryButton {
+    padding: 1.4rem 2.8rem;
+  }
+
+  @include for-tablet-portrait-up {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include for-tablet-landscape-up {
+    margin-right: 9rem;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  @include for-iphone5 {
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    .primaryButton {
+      padding: 1.4rem;
+    }
+  }
+}
+
+.mainHighlight__bulb {
+  min-width: 238px;
+  min-height: 220px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../assets/images/homepage/bulb.svg);
+  cursor: pointer;
+  order: -1;
+
+  @include for-tablet-portrait-up {
+    min-height: 364px;
+  }
+
+  @include for-tablet-landscape-up {
+    order: 1;
+    width: auto;
+    min-height: 337px;
+
+    &:hover {
+      animation-name: tada;
+      animation-duration: 1s;
+    }
+  }
+
+  @include for-iphone5 {
+    min-height: 140px;
+  }
+
+  @include for-vertical-desktop {
+    min-height: 730px;
+  }
+
+  &.no-animation {
+    animation-name: none;
+  }
+
+  &.animation {
+    animation-name: tada;
+    animation-duration: 1s;
+  }
+}
+
+.mainHighlight__clickMe {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: var(--main-accent-color);
+  border-radius: 1rem;
+  position: relative;
+  left: 50%;
+  top: 0rem;
+  transform: rotate(-20deg);
+  text-transform: uppercase;
+  font-weight: bold;
+  width: fit-content;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(45deg);
+    background-color: var(--main-accent-color);
+    top: 2rem;
+    left: 2rem;
+    z-index: -1;
+  }
+
+  @include for-tablet-portrait-up {
+    top: 4rem;
+  }
+
+  @include for-tablet-landscape-up {
+    top: 3rem;
+  }
+
+  @include for-ipad-pro-portrait {
+    top: 1rem;
+  }
+
+  @include for-mobile-only {
+    left: 45%;
+    top: 0.7rem;
+  }
+
+  @include for-iphone5 {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+
+    &::before {
+      width: 1rem;
+      height: 1rem;
+      top: 1.2rem;
+      left: 1.3rem;
+    }
+  }
+
+  @include for-vertical-desktop {
+    top: 6rem;
+    transform: scale(1.5) rotate(-20deg);
+  }
+}

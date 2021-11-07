@@ -1,0 +1,88 @@
+@mixin for-iphone5 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin for-iphoneX {
+  @media (max-width: 400px) and (min-height: 800px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-laptop-up {
+  @media (min-width: 992px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-ipad-pro-portrait {
+  @media (min-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin for-ipad-pro-landscape {
+  @media (min-height: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-vertical-desktop {
+  @media(min-width: 1050px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin for-touch-devices {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+}
+}
+
+// /* smartphones, touchscreens */
+// @media (hover: none) and (pointer: coarse) {
+//   /* ... */
+// }
+// /* stylus-based screens */
+// @media (hover: none) and (pointer: fine) {
+//   /* ... */
+// }
+// /* Nintendo Wii controller, Microsoft Kinect */
+// @media (hover: hover) and (pointer: coarse) {
+//   /* ... */
+// }
+// /* mouse, touch pad */
+// @media (hover: hover) and (pointer: fine) {
+//   /* ... */
+// }

@@ -1,0 +1,47 @@
+.personsList {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 4rem;
+  overflow-x: auto;
+}
+
+.personsList__item {
+  min-width: 220px;
+  min-height: 170px;
+  border-radius: 20px;
+  background-color: var(--main-accent-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+
+  h4, p {
+    position: absolute;
+    left: 16px;
+  }
+  
+  h4 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.5rem;
+    top: 180px;
+  }
+
+  p {
+    margin: 0;
+    top: 210px;
+  }
+
+  @include for-tablet-portrait-up {
+    min-width: 380px;
+    min-height: 240px;
+
+    h4 {
+      top: 250px;
+    }
+
+    p {
+      top: 280px;
+    }
+  }
+}

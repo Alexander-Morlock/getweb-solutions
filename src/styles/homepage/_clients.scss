@@ -1,0 +1,56 @@
+.clients {
+  text-align: center;
+}
+
+.clients__header {
+  font-size: 2rem;
+  margin: 0;
+
+  @include for-tablet-portrait-up {
+    font-size: 2.8rem;
+  }
+}
+
+.clients__subheader {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.3rem;
+    margin-top: auto;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  li {
+    margin: 0.5rem 0.7rem;
+
+    a[href*="assf"] {
+      margin: 1.2rem 0.7rem;
+    }
+  }
+
+  a {
+    line-height: 0;
+  }
+
+  svg {
+    fill: var(--main-text-color);
+    transition: fill $time;
+
+    &:hover {
+      fill: var(--main-accent-color);
+      transition: fill $time;
+    }
+
+    .nebankaStroke {
+      fill: var(--main-bg-color);
+    }
+  }
+}

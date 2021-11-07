@@ -1,0 +1,63 @@
+.contactForm {
+  text-align: left;
+  padding-top: 6rem;
+
+  @include for-tablet-portrait-up {
+    text-align: center;
+    padding-top: 7rem;
+  }
+}
+
+.contactForm__header {
+  font-size: 2rem;
+  margin: 0;
+
+  @include for-tablet-portrait-up {
+    font-size: 2.8rem;
+  }
+}
+
+.contactForm__subheader {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 3rem;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.3rem;
+  }
+}
+
+.contactForm__form {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contactForm__customInput {
+  width: 100%;
+
+  @include for-tablet-portrait-up {
+    width: 45%;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 30%;
+  }
+
+  flex-grow: 1;
+}
+
+.contactForm__submit {
+  margin: 0 auto;
+}
+
+.contactForm__agreementCheckbox {
+  margin: 0.4rem auto 0.9rem;
+  width: 100%;
+
+  @include for-mobile-only {
+    text-align: left;
+  }
+}
