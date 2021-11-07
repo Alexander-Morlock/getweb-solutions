@@ -11,4 +11,4 @@ npm run watch
 npm run build
 
 ## Working preview
-http://artofdesign.ru/web/getweb/
+http://getweb.artofdesign.ru/
