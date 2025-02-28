@@ -9,6 +9,3 @@ npm run watch
 
 ### Production build
 npm run build
-
-## Working preview
-http://getweb.artofdesign.ru/
