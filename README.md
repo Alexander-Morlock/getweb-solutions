@@ -9,3 +9,6 @@ npm run watch
 
 ### Production build
 npm run build
+
+### Demo
+http://getweb.onlinemania.ru/
